@@ -1,0 +1,134 @@
+{
+    "name": "شخرميت vip .",
+    "description": "Telegram Group Calls شخرميت .",
+    "logo": "https://graph.org/file/cf2418fceb9442d957234.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "stack": "container",
+    "env": {
+      "API_ID": {
+        "description": "-› اكتب الايبي ايدي الخاص بك .",
+        "value": "8934899",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "-› ضع الايبي هاش .",
+        "value": "bf3e98d2c351e4ad06946b4897374a1e",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "-› ضع توكنك .",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "-› اتركها كما هي .",
+        "value": "mongodb+srv://omsnkok:muntazer@cluster0.ywxsjao.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "required": true
+      },
+      "MUSIC_BOT_NAME": {
+        "description": "-› ضع اسم بوتك .",
+        "value": "Freedom",
+        "required": true          
+      },
+      "assistant": {
+        "description": "-› ضع يوزر حساب المساعد مع @ .",
+        "value": "@",
+        "required": true          
+      },
+      "Muntazer": {
+        "description": "-› ضع قناة الإشتراك الاجباري بدون @ .",
+        "value": "Z6Z4Z",
+        "required": true          
+      },
+      "OWNER": {
+        "description": "-› ضع ايدي المالك .",
+        "value": "5587962350",
+        "required": true          
+      },
+      "SUPPORT_GROUP": {
+        "description": "-› ضع رابط كروب الدعم .",
+        "value": "https://t.me/Z6Z4Z",
+        "required": true
+      },
+      "SUPPORT_CHANNEL": {
+        "description": "-› ضع قناة التحديثات .",
+        "value": "https://t.me/Z6Z4Z",
+        "required": true
+      },
+      "STRING_SESSION2": {
+        "description": "-› لتخفيف الضغط عن المساعد الاول ، يمكنك وضع مساعد بايروجرام آخر ( اختياري وليس إجباري ).",
+        "value": "",
+        "required": false
+      },
+      "START_IMG_URL": {
+        "description": "-› ضع صورة كليشة ستارت .",
+        "value": "https://graph.org/file/cf2418fceb9442d957234.jpg",
+        "required": true
+      },
+      "YOUTUBE_IMG_URL": {
+        "description": "-› ضع صورة رابط التشغيل .",
+        "value": "https://graph.org/file/cf2418fceb9442d957234.jpg",
+        "required": true
+      },
+      "DURATION_LIMIT_MIN": {
+        "description": "-› ضع عدد الادنى لتحميل الملفات الصوتية . .",
+        "value": "50000",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "-› ضع ايدي المالك يمكنك وضع اكثر من ايدي .",
+        "value": "1854384004",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "-› ضع كود بايروجرام ، استخرجة من هذا البوت فقط @FreedomLoBoT .",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "-› ضع ايبي هيروكو .",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_APP_NAME": {
+        "description": "-› ضع اسم تطبيقك في الأعلى .",
+        "value": "",
+        "required": true
+      },
+      "LOG_GROUP_ID": {
+        "description": "-› ضع ايدي قناة السجلات .",
+        "value": "-100",
+        "required": true
+      },
+      "UPSTREAM_REPO": {
+        "description": "-› اتركها كما هي",
+        "value": "https://github.com/fps90/Hot",
+        "required": true
+      },
+      "UPSTREAM_BRANCH": {
+        "description": "-› اتركها كما هي .",
+        "value": "master",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "basic"
+          }
+      }
+  }
